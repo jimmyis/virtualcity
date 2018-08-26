@@ -317,7 +317,7 @@ var vm = new Vue({
     mounted() {
         this.timer();
         VirtualCityContract.getAlias(function(e, r) {
-            vm.playerAlias = web3.toAscii(r);
+            vm.playerAlias = r;
         });
     }
 });
